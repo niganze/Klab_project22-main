@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@400;700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Jost', sans-serif;
+    outline: none;
+    color: black;
+    font-size: 20px;
+}
+
+body {
+    background: rgb(185, 184, 184);
+    font-family: 'Poppins', sans-serif;
+}
+
+#form {
+    width: 300px;
+    margin: 20vh auto 0 auto;
+    padding: 20px;
+    background-color: rgb(190, 125, 243);
+    border-radius: 4px;
+    font-size: 22px;
+}
+
+#form h1 {
+    color: #0ecfcf;
+    text-align: flex;
+    font-size: medium;
+    font-display: 67px;
+}
+
+#form button {
+    padding: 10px;
+    margin-top: 10px;
+    width: 100%;
+    color: rgb(185, 142, 0);
+    background-color: rgb(95, 29, 29);
+    border: none;
+    border-radius: 4px;
+}
+
+.input-control {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-control input {
+    border: 2px solid #110ef7;
+    border-radius: 4px;
+    display: block;
+    font-size: 20px;
+    padding: 10px;  
+    width: 100%;
+}
+
+.input-control input:focus {
+    outline: 0;
+}
+
+.input-control.success input {
+    border-color: #0f12d4;
+}
+
+.input-control.error input {
+    border-color: #ff3860;
+}
+
+.input-control .error {
+    color: #ff3860;
+    font-size: 12px;
+    height: 13px;
+}

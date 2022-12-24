@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> my portfolio website design </title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style1.css" />
+    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="footer.css" />
+    
+
+</head>
+
+<body>
+    <header>
+
+        <div class="user">
+            <img src="alain.jpg" alt="">
+            <h3 class="name">NIGANZE Alain</h3>
+            <p class="post"> web designer and front end developer</p>
+        </div>
+
+        <nav class="navbar">
+            <ul>
+                <li><a href="#home">home</a></li>
+                <li><a href="#about">about</a></li>
+                <li><a href="#education">skills</a></li>
+                <li><a href="#portfolio">portfolio</a></li>
+                <li><a href="#contact">contact</a></li>
+                <li><a href="#sign_up">sign up here</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+
+    <div id="menu" class="fas fa-bars"></div>
+
+    <section class="home" id="home">
+
+        <h3>HI THERE MY DEAR !</h3>
+        <h1>I'M NIGANZE alain</h1>
+        <p> From university of Rwanda and am currently studying computer and software engineering ..
+        </p>
+        <a href="#about"><button class="btn">about me <i class="fas fa-user"></i></button></a>
+
+    </section>
+
+
+    <section class="about" id="about">
+
+        <h1 class="heading"> <span>about</span> me </h1>
+
+        <div class="row">
+
+            <div class="info">
+                <h3> <span> name : </span> NIGANZE alain </h3>
+                <h3> <span> age : </span> 20 </h3>
+                <h3> <span> qualification : </span> BMS </h3>
+                <h3> <span> post : </span> From university of Rwanda with two years of experience facilitating in computer and software engineering inn level two of course lam just provide solutions with a wide range of leaderships and technology skills. Proven
+                    ability to leverage front end developer expertise to build interactive and user-centered website designs to scale. As well as network design and configuration with certificate of cisco networking academy </h3>
+                <h3> <span> language : </span> english </h3>
+                <a href="cv.html"><button class="btn"> download CV <i class="fas fa-download"></i> </button></a>
+            </div>
+
+            <div class="counter">
+                <div class="box">
+                    <span>2+</span>
+                    <h3>years of experience</h3>
+                </div>
+
+                <div class="box">
+                    <span>100+</span>
+                    <h3>project completed(capu capu)</h3>
+                </div>
+
+                <div class="box">
+                    <span>40+</span>
+                    <h3>from github</h3>
+                </div>
+
+                <div class="box">
+                    <span>12+</span>
+                    <h3>free codecump</h3>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+    <section class="education" id="education">
+
+        <h1 class="heading"> my <span>skills</span> </h1>
+
+        <div class="box-container">
+
+            <div class="box">
+                <div class="skill">
+                    <div class="skill-title">HTML</div>
+                    <div class="skill-bar"></div>
+                    <div class="html skill-fill">
+                        <span class="skill-percent">50%</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="skill">
+                    <div class="skill-title">CSS</div>
+                    <div class="skill-bar"></div>
+                    <div class="css skill-fill">
+                        <span class="skill-percent">80%</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="skill">
+                    <div class="skill-title">JavaScript</div>
+                    <div class="skill-bar"></div>
+                    <div class="js skill-fill">
+                        <span class="skill-percent">70%</span>
+                    </div>
+                </div>
+            </div>
+            <div class="info">
+                <p> It’s important to consider your strengths and skills to help you write about yourself confidently in different situations. through this skills l have l can help you achieve it also
+                </p>
+            </div>
+
+    </section>
+
+
+    <section class="portfolio" id="portfolio">
+
+        <h1 class="heading"> my <span>portfolio</span> </h1>
+
+        <div class="box-container">
+
+            <div class="box">
+                <img src="Capture.PNG" alt="">
+            </div>
+
+            <div class="box">
+                <img src="Capture portfio.PNG" alt="">
+            </div>
+
+            <div class="box">
+                <img src="alain2.jpg" alt="">
+            </div>
+
+            <div class="box">
+                <img src="alain3.jpg" alt="">
+            </div>
+
+            <div class="box">
+                <img src="alain5.jpg" alt="">
+            </div>
+
+            <div class="box">
+                <img src="alain7.jpg" alt="">
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <section class="contact" id="contact">
+
+        <h1 class="heading"> <span>contact</span> me </h1>
+
+        <div class="row">
+
+            <div class="content">
+
+                <h3 class="title">contact info</h3>
+
+                <div class="info">
+                    <h3> <i class="fas fa-envelope"></i> niganzealain100@gmail.com </h3>
+                    <h3> <i class="fas fa-phone"></i> +250 783943932 </h3>
+                    <h3> <i class="fas fa-phone"></i> +250 782500771 </h3>
+                    <h3> <i class="fas fa-map-marker-alt"></i> huye, kigali - Rwanda. </h3>
+                </div>
+            </div>
+            <form id="" action="">
+                <input type="text" placeholder="enter your name" class="box" id ="contact-name" onkeyup="validateName()">
+                <span id ="name-error"></span>
+                <input type="tel" placeholder=" example: 0782500771 " class="box" id ="contact-phone" onkeyup="validatePhone()">
+                <span id ="phone-error"></span>
+                <input type="email " placeholder=" enter your email" class="box" id ="contact-email" onkeyup="validateEmail()">
+                <span id ="email-error"></span>
+                <input type="text" placeholder=" project " class="box" id ="contact-project" onkeyup="validateProject()">
+                <span id ="project-error"></span>
+                <textarea name="" cols="30" rows="10" class="box message" placeholder=" enter your message here" id ="contact-message" onkeyup="validateMessage()"></textarea>>
+                <span id ="message-error"></span>
+                <button onclick="return validateForm()" type="submit" class="btn"> send to me  <i class="fas fa-paper-plane"></i> </button>
+                <span id="submit-error"></span>
+            </form>
+        </div>
+    </section>
+     
+    <section class="sign_up" id="sign_up">
+
+        <h1 class="heading"> registration <span>form </span> </h1>
+        <div class="container">
+            <form id="form" action="/">
+                <h1>Registration</h1>
+                <div class="input-control">
+                    <label for="username">Username</label>
+                    <input id="username" name="username" type="text">
+                    <div class="error"></div>
+                </div>
+                <div class="input-control">
+                    <label for="email">Email</label>
+                    <input id="email" name="email" type="text">
+                    <div class="error"></div>
+                </div>
+                <div class="input-control">
+                    <label for="password">Password</label>
+                    <input id="password" name="password" type="password">
+                    <div class="error"></div>
+                </div>
+                <div class="input-control">
+                    <label for="password2">Password again</label>
+                    <input id="password2" name="password2" type="password">
+                    <div class="error"></div>
+                </div>
+                <button type="submit">Sign Up</button>
+            </form>
+        </div>
+        </section>
+
+    <footer class="footer-distributed">
+
+        <div class="footer-left">
+            <h3>NIGANZE<span>web designer and developer</span></h3>
+
+            <p class="footer-links">
+                <a href="#home">Home</a>
+                |
+                <a href="#about">About</a>
+                |
+                <a href="#contact">Contact</a>
+                |
+                <a href="#">Blog</a>
+            </p>
+
+            <p class="klabproject">Copyright © 2022 <strong>alain web designer</strong> All rights reserved</p>
+        </div>
+
+        <div class="footer-center">
+            <div>
+                <i class="fa fa-map-marker"></i>
+                <p><span>kigali</span>Rwanda</p>
+            </div>
+
+            <div>
+                <i class="fa fa-phone"></i>
+                <p><a href="0782500771"></p><p>+250 782500771</p>
+            </div>
+            <div>
+                <i class="fa fa-envelope"></i>
+                <p><a href="niganzealain@gmail.com">alain@gmail.com</a></p>
+            </div>
+        </div>
+        <div class="footer-right">
+            <p class="footer-company-about">
+                <span>About the my portfolio</span>
+                <strong> web designer and front end developer</strong> 
+                
+            </p>
+            <div class="footer-icons">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://github.com/niganze/niganze-klabprojectalain"><i class="fab fa-github"></i></a>
+            </div>
+            </div>
+        </div>
+    </footer>
+
+</footer>
+   
+
+
+    <a href="#home" class="top">
+        <img src="images/scroll-top-img.png" alt="">
+    </a>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <!-- MY  js file link FOT alain web designer  -->
+    <script type="text/javascript" src="klab.js"></script>
+    <script type="text/javascript"src="contact.js"></script>
+
+</body>
+
+</html>
