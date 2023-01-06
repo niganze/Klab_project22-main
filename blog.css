@@ -6,7 +6,7 @@
 
 
 body {
-    align-items: center;
+    /* align-items: center;
     background-color: #F3F5F7;
     font-family: 'Poppins',
         sans-serif;
@@ -16,15 +16,15 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-}
+} */
 
 
 
-.container {
+/* container {
     max-width: 70%;
     margin: 0 auto;
     height: 100%;
-}
+} */
 
 .grid {
     display: grid;

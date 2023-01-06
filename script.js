@@ -1,8 +1,8 @@
 $(document).ready(function(){
 
   $('#menu').click(function(){
-    $(this).toggleClass('fa-times');
-    $('header').toggleClass('toggle');
+    // $(this).toggleClass('fa-times');
+    // $('header').toggleClass('toggle');
   });
 
   $(window).on('scroll load',function(){
@@ -36,3 +36,21 @@ $(document).ready(function(){
   });
 
 });
+
+
+
+let menu  =  document.getElementById("menu");
+document.querySelector(".close").style.display="none";
+
+menu.addEventListener("click",()=>{
+  document.querySelector("header").style.display="block";
+  document.querySelector(".close").style.display="block";
+  menu.style.display="none";
+
+})
+
+document.querySelector(".close").addEventListener("click",()=>{
+  document.querySelector("header").style.display="none";
+  document.querySelector(".close").style.display="none";
+  menu.style.display="block";
+})

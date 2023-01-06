@@ -41,6 +41,7 @@ html::-webkit-scrollbar-thumb {
 body {
     background: #111;
     overflow-x: hidden;
+    position: relative;
     padding-left: 35rem;
 }
 
@@ -82,11 +83,12 @@ section {
 }
 
 header {
+    /* size: 100%; */
     position: fixed;
     top: 0;
     left: 0;
-    z-index: 1000;
-    height: 100%;
+    /* z-index: 1000; */
+    height: 109%;
     width: 35rem;
     background: #1a1a1a;
     display: flex;
@@ -94,6 +96,7 @@ header {
     justify-content: center;
     flex-flow: column;
     text-align: center;
+border: 2px solid rgb(0, 26, 255);
 }
 
 header .user img {
@@ -117,6 +120,7 @@ header .user .post {
 
 header .navbar {
     width: 100%;
+    position: block;
 }
 
 header .navbar ul {
@@ -147,7 +151,7 @@ header .navbar ul li a:hover {
     cursor: pointer;
     font-size: 2.5rem;
     padding: 1rem 1.5rem;
-    z-index: 1000;
+    z-index: 9;
     display: none;
 }
 
@@ -396,10 +400,27 @@ header .navbar ul li a:hover {
 
 @media (max-width:991px) {
     header {
-        left: -120%;
+        position: absolute;
+        left: 0;
+        display: none;
+        align-items: flex-start;
+        justify-content: flex-start;
+    
+        bottom:0;
     }
+
+    .header .user{
+   display: block;
+   position: absolute;
+   left: 0;
+  
+   z-index: 22;
+    }
+
     #menu {
         display: block;
+        left: auto;
+        right: auto;
     }
     header.toggle {
         left: 0%;
@@ -418,6 +439,8 @@ header .navbar ul li a:hover {
 @media (max-width:400px) {
     header {
         width: 100vw;
+        height: 50;
+
     }
     .heading {
         margin: 0 3rem;
